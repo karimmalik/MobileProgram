@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.karim.moneysetter.HomeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/add_year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/year"
+            android:textSize="50dp"
+            android:layout_marginStart="50dp"
+            />
+
+        <TextView
+            android:id="@+id/add_month"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="@string/month"
+            android:textSize="50dp" />
+
+        <TextView
+            android:id="@+id/add_income"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="250dp"
+            android:layout_marginTop="-110dp"
+            android:text="@string/income"
+            android:textColor="@android:color/holo_green_light"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/add_expense"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="250dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/expense"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/add_target"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="250dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/target"
+            android:textColor="@android:color/black"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="30dp"
+            android:text="@string/date"
+            android:textColor="@android:color/black"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_marginTop="-30dp"
+            android:layout_marginLeft="120dp"
+            android:inputType="date" />
+
+
+        <!--<TextView-->
+            <!--android:id="@+id/category"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginStart="50dp"-->
+            <!--android:layout_marginTop="20dp"-->
+            <!--android:text="@string/category"-->
+            <!--android:textColor="@android:color/black"-->
+            <!--android:textSize="20dp" />-->
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="wrap_content"
+                android:minWidth="300dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/col_category"
+                android:layout_marginStart="40dp"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="-180dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="40dp">
+
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="wrap_content"
+                android:minWidth="300dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/col_ammount"
+                />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="0sp"
+                android:layout_marginStart="0sp"
+                android:layout_marginTop="0sp">
+
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/col_description"
+                    android:minWidth="300sp" />
+            </android.support.design.widget.TextInputLayout>
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+
+
+
+</android.support.v7.widget.LinearLayoutCompat>
